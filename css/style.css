@@ -689,3 +689,153 @@ to{
             }
             
             }
+            @media (min-width: 10px) and (max-width:479px) {
+
+                .titrepresentation{
+                    
+                    text-align: center;
+                }
+                .titre{
+                    font-size: 160%;
+                }
+                .titrepresentation:hover {
+                    background-image: url(../img/titi.jpg);
+                    background-position: 0%;
+                    background-size: 18%;
+                    background-position-x: 50%;
+                    background-repeat: no-repeat;
+                }
+                
+                
+                
+                
+                /*                                      GIF IMAGE HEADER    + CAROUSEL                */
+                #gifport {
+                    background-position-y: 50%;
+                    background-position-x: 54%;
+                    background-image: url(../img/portfolio.gif);
+                    background-size: 76%;
+                }
+                #gif3D {     background-image: url(../img/lumiere.gif);
+                    background-size: 25%;
+                    background-position-x: -67%;
+                    background-position-y: 50%;
+                
+                }
+                #gifprog {
+                    background-position-x: 100%;
+                    background-image: url(../img/programming.gif);
+                    background-size: 26%;
+                }
+                #gifmark {
+                    background-image: url(../img/communication.gif);
+                    background-size: 20%;
+                    background-position-x: 0;
+                }
+                
+                .carousel-control-prev {
+                width: 8%;
+                            backdrop-filter: saturate(250%) blur(1vh);
+                        background-color: rgba(255, 255, 255, 0.100);
+                                            }
+                                            .carousel-control-next {
+                                                width: 8%;
+                                                            backdrop-filter: saturate(250%) blur(1vh);
+                                                        background-color: rgba(255, 255, 255, 0.100);
+                                                                            }
+                
+                
+                
+                
+                
+                /*                                     WIREFRAME ANIMATION ET DISPOSITION                */                                                            
+                .image {
+                    display: flex;
+                    text-align: center;
+                    margin: 5%;
+                    justify-content: space-between;
+                }
+                .wireframe1{
+                    
+                    width: 20%;
+                    margin-right: 10%;
+                    transition: all 1s ease-out 1s;
+                    animation-name: transform;
+                    animation-duration: 4s;
+                    animation-fill-mode: forwards;
+                    
+                
+                }
+                .wireframe1:hover{
+                    transform:rotate(360deg) translate(150%,3em) scale(3);
+                    z-index: 99;
+                }
+                @keyframes transform {
+                    from {
+                      
+                        background:blue;
+                    }
+                to{
+                    transform: rotate(45deg);
+                }
+                }
+                
+                
+                
+                
+                .wireframe2{
+                        width: 20%;
+                        margin-left: 10%;
+                        transform: rotate(-45deg);
+                        transition: all 1s ease-out 1s;
+                }
+                    .wireframe2:hover{
+                
+                        transform: rotate(-360deg) translate(-150%,3em) scale(3);
+                        z-index: 99;}
+                .wireframe3{
+                    width: 20%;
+                
+                }
+                .wireframe3:hover {
+                    transform:translate(0,3em) scale(3);
+                }
+                
+                .wireframe4{
+                    width: 20%;
+                    margin-right: 10%;
+                    transform: rotate(-45deg);
+                    transition: all 1s ease-out 1s;
+                    
+                }
+                .wireframe4:hover{
+                    transform: rotate(360deg) translate(150%,-7em) scale(3);
+                    z-index: 99;}
+                .wireframe6{
+                    
+                    width: 20%;
+                    margin-left: 10%;
+                    animation-name: transform6;
+                    animation-duration: 4s;
+                    animation-fill-mode: forwards;
+                    transition: all 1s ease-out 1s;
+                }
+                @keyframes transform6 {
+                    from {
+                      
+                        background:blue;
+                    }
+                to{
+                    transform: rotate(45deg);
+                }
+                }
+                .wireframe6:hover{
+                    transform: rotate(360deg) translate(-150%,-7em) scale(3);
+                    z-index: 99;}
+                .wireframe5{
+                    width: 20%;}
+                .wireframe5:hover{
+                    transform: translate(0,-7em) scale(3);
+                }
+                
+                }
